@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './index.css';
 
@@ -7,8 +7,8 @@ const Menu = ({items}) => {
 	return(
 		<nav className='menu'>
 			<ul>
-				{items.map((item, index) =>
-					<li key={index} > <Link to={item.link} > {item.label}</Link></li>
+				{items.map((item) =>
+					<li key={item.id} ><NavLink to={item.link} activeClassName="active" exact>{item.label}</NavLink></li>
 				)}
 			</ul>
 		</nav>

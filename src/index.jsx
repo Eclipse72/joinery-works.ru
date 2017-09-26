@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom'
-// import { Router, Route, hashHistory} from 'react-router';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 import Header from './header';
+import Slider from './slider';
 import Footer from './footer';
-// import Footer from './footer';
 
-import './index.css';
 import 'normalize-css';
 
 var menu = [
 	{
+		'id': '1',
 		'label': 'Главная',
 		'link': '/'
 	}, 
 	{
+		'id': '2',
 		'label': 'О нас',
 		'link': '/about'
 	}, 
@@ -33,6 +33,7 @@ var menu = [
 	// 	'link': '/team'
 	// },
 	{
+		'id': '3',
 		'label': 'Контакты',
 		'link': '/contacts'
 	}
@@ -41,6 +42,7 @@ var menu = [
 const App = () => (
   <div>
     <Header items={menu}/>
+    <Slider />
     <Main />
     <Footer items={menu}/>
   </div>
@@ -67,8 +69,9 @@ const Main = () => (
 )
 
 ReactDom.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>,
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>,
 	document.getElementById('root')
 );
+

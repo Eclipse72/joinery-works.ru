@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 
 import Logo from './logo';
 import Menu from './menu';
-import Slider from './slider';
 import IconsList from './iconslist';
+
+import './header.css';
 
 const Header = props => {
 	return(
-		<header>
-		<selection>
+		<header className="page-header">
 			<Logo />
 			<Menu items={props.items} />
 			<IconsList />
-		</selection>
-			<Slider />
 		</header>
 	)
 };
