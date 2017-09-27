@@ -2,7 +2,7 @@ import React from 'react';
 
 const IconsList = () => {
 	return(
-		<img />
+		<div className="icons-item"></div>
 	)
 }
 export default IconsList;
