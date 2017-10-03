@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Logo from './logo';
-import Menu from './menu';
-import IconsList from './iconslist';
+import Logo from './logo'
+import Menu from './menu'
+import IconsList from './iconslist'
 
-import './header.css';
+import './header.css'
 
 const Header = props => {
 	return(
@@ -14,6 +14,6 @@ const Header = props => {
 			<IconsList />
 		</header>
 	)
-};
+}
 
-export default Header;
+export default Header

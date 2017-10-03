@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Paralax = () => {
 
@@ -6,4 +6,5 @@ const Paralax = () => {
 		<p>Paralax</p>
 	)
 }
-export default Paralax;
+
+export default Paralax

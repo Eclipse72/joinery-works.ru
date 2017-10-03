@@ -29,7 +29,7 @@ const common = {
 	},
 	devtool: 'eval-source-map',
 	resolve: {
-		extensions: ['.js', '.jsx', '.json']
+		extensions: ['.js', '.jsx']
 	}
 };
 const developmentConfig = {
