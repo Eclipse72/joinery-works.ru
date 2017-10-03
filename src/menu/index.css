@@ -1,0 +1,36 @@
+.menu{	
+}
+.menu li {
+    display: inline-block;
+}
+.menu li + li{
+    margin-left: 5px;
+}
+.menu li + li a {
+    position: relative;
+}
+.menu li + li a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%);
+    will-change: transform;
+}
+.menu a {
+	text-decoration: none;
+	color: #fff;
+    padding: 8px 24px;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+}
+.menu a.active, .menu a:hover {
+    color: #2c261f;
+    background: #fff;
+}
