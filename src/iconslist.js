@@ -6,8 +6,6 @@ import 'font-awesome/css/font-awesome.css'
 const IconsList = () => {
 	return(
 		<div className="icons-item">
-			<FontAwesome name='instagram' />
-			<FontAwesome name='vk' />
 		</div>
 	)
 }

@@ -13,7 +13,6 @@ import 'normalize-css'
 const App = () => (
   <div>
     <Header items={menu}/>
-    <Slider />
     <Main />
     <Footer/>
   </div>
@@ -21,6 +20,7 @@ const App = () => (
 
 const Home = () => (
   <div>
+    <Slider />
     <p>Home</p>
   </div>
 )

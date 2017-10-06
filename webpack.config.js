@@ -15,16 +15,16 @@ const common = {
 		    	loader: 'react-hot-loader!babel-loader'
 		    },
 		    {
-				  test: /\.css$/,
-				  use: ExtractTextPlugin.extract({
-				    fallback: 'style-loader',
-				    use: 'css-loader'
-				  })
-				},
-				{
-	        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-	        loader: 'file-loader?name=fonts/[name].[ext]'
-	      }
+			  test: /\.css$/,
+			  use: ExtractTextPlugin.extract({
+			    fallback: 'style-loader',
+			    use: 'css-loader'
+			  })
+			},
+			{
+				test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+				loader: 'file-loader?name=fonts/[name].[ext]'
+			}
 		],
 		loaders: [
 			{
@@ -34,9 +34,9 @@ const common = {
 			}
 		]
 	},
-		plugins: [
-		  new ExtractTextPlugin('styles.css')
-		],
+	plugins: [
+		new ExtractTextPlugin('styles.css')
+	],
 	devtool: 'eval-source-map',
 	resolve: {
 		extensions: ['.js', '.jsx']
@@ -48,7 +48,7 @@ const developmentConfig = {
 		contentBase: './public',
 
 		// stats:'errors-only',
-		// port: 9000
+		port: 9000
 	}
 };
 
