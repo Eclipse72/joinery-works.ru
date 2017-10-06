@@ -1,11 +1,11 @@
+.menu {
+    padding: 0 25px;
+}
 .menu ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-.menu li {
-    /*flex: 1 1 0;*/
 }
 .menu li + li{
     margin-left: 5px;

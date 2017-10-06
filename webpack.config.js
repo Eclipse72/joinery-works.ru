@@ -15,11 +15,8 @@ const common = {
 		    	loader: 'react-hot-loader!babel-loader'
 		    },
 		    {
-			  test: /\.css$/,
-			  use: ExtractTextPlugin.extract({
-			    fallback: 'style-loader',
-			    use: 'css-loader'
-			  })
+				test: /\.css$/,
+			    loader: 'style-loader!css-loader'
 			},
 			{
 				test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
@@ -34,9 +31,9 @@ const common = {
 			}
 		]
 	},
-	plugins: [
-		new ExtractTextPlugin('styles.css')
-	],
+	// plugins: [
+	// 	new ExtractTextPlugin('styles.css')
+	// ],
 	devtool: 'eval-source-map',
 	resolve: {
 		extensions: ['.js', '.jsx']
@@ -44,11 +41,11 @@ const common = {
 };
 const developmentConfig = {
 	devServer: {
-		inline: true,
+		// inline: true,
 		contentBase: './public',
-
+		// hot: true,
 		// stats:'errors-only',
-		port: 9000
+		// port: 9000
 	}
 };
 

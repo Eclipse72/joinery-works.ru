@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './style.css';
+
 const Slider = () => {
 	return(
-		<p>Slider</p>
+		<div className="slider">Slider</div>
 	)
 }
 

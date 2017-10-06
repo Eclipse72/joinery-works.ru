@@ -3,7 +3,7 @@ import React from 'react'
 const Paralax = () => {
 
 	return(
-		<p>Paralax</p>
+		<div>Paralax</div>
 	)
 }
 

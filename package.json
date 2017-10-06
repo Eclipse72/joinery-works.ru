@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --env production",
-    "dev": "webpack-dev-server --env development --hot --colors"
+    "dev": "webpack-dev-server --env development --inline --hot --colors"
   },
   "babel": {
     "presets": [

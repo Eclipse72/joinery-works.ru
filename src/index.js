@@ -4,11 +4,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 import Header from './header'
-import Slider from './slider'
 import Footer from './footer'
 import {menu} from './store'
 
 import 'normalize-css'
+import './index.css'
 
 const App = () => (
   <div>
@@ -20,7 +20,6 @@ const App = () => (
 
 const Home = () => (
   <div>
-    <Slider />
     <p>Home</p>
   </div>
 )
