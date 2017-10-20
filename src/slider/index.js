@@ -2,9 +2,10 @@ import React from 'react'
 
 import './style.css';
 
-const Slider = () => {
+const Slider = (props) => {
 	return(
-		<div className="slider">Slider</div>
+		<div className="slider" >
+		</div>
 	)
 }
 

@@ -1,19 +1,17 @@
-.page-header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	box-sizing: border-box;
-	height: 74px;
+.header-main{
+	user-select: none;
+	position: relative;
+}
+.nav-top{
 	background: rgba(29, 19, 3, 0.5);
 	padding: 0 30px;
+	height: 74px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 	align-items: center;
-	width: 100%;
-}
-.page-header>.logo-img, .page-header>.icons-item{
-	display: block;
-}
-.page-header>.menu{
-	flex-grow:8;
 }

@@ -1,0 +1,16 @@
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumbs li{
+	font-size: 24px;
+	text-transform: uppercase;
+    letter-spacing: .075em;
+	list-style-type: none;
+}
+
+.breadcrumbs li+li:before{
+	content: '/';
+    padding-right: 10px;
+    margin-left: 10px;
+}

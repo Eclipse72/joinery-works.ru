@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import IconsList from '../iconslist'
 import Logo from '../logo'
 import Menu from '../menu'
-import IconsList from '../iconslist'
-import Slider from '../slider'
 import Paralax from '../paralax'
+import Slider from '../slider'
 
 import './style.css'
 
 const Header = props => {
 	return(
-		<header>
-			<div className="page-header">
+		<header className="header-main">
+			<div className="nav-top">
 				<Logo />
 				<Menu items={props.items} />
 				<IconsList />

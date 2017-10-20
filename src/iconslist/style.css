@@ -1,4 +1,7 @@
 .icons-item span {
     padding: 0 5px;
-    /*color: #fff;*/
+    transition: .3s all ease;
+}
+.icons-item :hover {
+	color: #efe2c7;
 }

@@ -1,40 +1,39 @@
 .menu {
     padding: 0 25px;
 }
-.menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.menu li + li{
-    margin-left: 5px;
-}
-.menu li + li a {
-    position: relative;
-}
-.menu li + li a:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -9px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    pointer-events: none;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-50%);
-    will-change: transform;
-}
 .menu a {
-	text-decoration: none;
-	color: #fff;
-    padding: 8px 24px;
-    border-radius: 30px;
     background: transparent;
+    border-radius: 30px;
+    color: #fff;
+    margin-left: 20px;
     outline: none;
+    padding: 8px 24px;
+    position: relative;
+    text-decoration: none;
+    transition: .3s .3s all ease;
 }
-.menu a.active, .menu a:hover {
-    color: #2c261f;
+.menu a.active, 
+.menu a:hover {
     background: #fff;
+    color: #2c261f;
+    transition-delay: 0s;
+}
+.menu a + a:before {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    content: '';
+    height: 4px;
+    left: -11px;
+    pointer-events: none;
+    position: absolute;
+    top: 16px;
+    width: 4px;
+    transition: .3s .3s background ease;
+}
+.menu a.active + a:before, 
+.menu a.active:before, 
+.menu a:hover:before,
+.menu a:hover + a:before {
+    background: none;
+    transition-delay: 0s;
 }

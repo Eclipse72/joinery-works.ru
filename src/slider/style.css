@@ -1,5 +1,6 @@
 .slider{
-	display: block;
-	height: 300px;
-	background: #8d8d8d;
+	height: 665px;
+	background-size: contain;
+	background: url(../img/slider-01-1920x665.jpg) no-repeat;
+	background-position: center;
 }

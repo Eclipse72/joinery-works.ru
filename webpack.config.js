@@ -19,6 +19,11 @@ const common = {
 			    loader: 'style-loader!css-loader'
 			},
 			{
+				test: /\.(jpe?g|png|gif)$/,
+		    	exclude: /node_modules/, 
+				loader: 'file-loader?name=img/[name].[ext]'
+			},
+			{
 				test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
 				loader: 'file-loader?name=fonts/[name].[ext]'
 			}
@@ -43,7 +48,7 @@ const developmentConfig = {
 	devServer: {
 		// inline: true,
 		contentBase: './public',
-		// hot: true,
+		hot: true,
 		// stats:'errors-only',
 		// port: 9000
 	}

@@ -6,17 +6,14 @@ import './style.css';
 const Menu = ({items}) => {
 	return(
 		<nav className='menu'>
-			<ul>
-				{items.map((item) =>
-					<li key={item.id} >
-						<NavLink 
-							to={item.link} 
-							activeClassName="active" 
-							exact={item.id=='1'?true:false}>{item.label}
-						</NavLink>
-					</li>
-				)}
-			</ul>
+			{items.map((item) =>
+				<NavLink 
+					key={item.id} 
+					to={item.link} 
+					activeClassName="active" 
+					exact={item.id=='1'?true:false}>{item.label}
+				</NavLink>
+			)}
 		</nav>
 	)
 }
