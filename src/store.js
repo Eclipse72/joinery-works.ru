@@ -11,6 +11,11 @@ export const menu =	[
 	}, 
 	{
 		"id": "3",
+		"label": "Проекты",
+		"link": "/projects"
+	}, 
+	{
+		"id": "4",
 		"label": "Контакты",
 		"link": "/contacts"
 	}

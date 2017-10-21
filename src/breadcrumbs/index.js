@@ -5,7 +5,7 @@ import './style.css'
 const Breadcrumbs = (props) => {
 
 	return(
-		<div className="text-white">
+		<div>
 			<div className="text-extra-big">Услуги</div>
 			<ul className="breadcrumbs" >
 				<li><a href="#">Главная</a></li>

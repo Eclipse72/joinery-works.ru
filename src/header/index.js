@@ -11,7 +11,7 @@ import './style.css'
 
 const Header = props => {
 	return(
-		<header className="header-main">
+		<header className="header-main text-white">
 			<div className="nav-top">
 				<Logo />
 				<Menu items={props.items} />

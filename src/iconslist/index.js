@@ -7,7 +7,7 @@ import './style.css'
 
 const IconsList = () => {
 	return(
-		<div className="icons-item text-white">
+		<div className="icons-item">
 			<Link to="#"><FontAwesome name="instagram" /></Link>
 			<Link to="#"><FontAwesome name="vk" /></Link>
 		</div>

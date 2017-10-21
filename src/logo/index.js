@@ -5,7 +5,7 @@ import './style.css';
 
 const Logo = props => {
 	return(
-		<Link to="/" className="logo text-white">JoineryWorks</Link>
+		<Link to="/" className="logo">JoineryWorks</Link>
 	)
 }
 
