@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 
 import Header from './header'
 import Footer from './footer'
+import Container from './container'
+import Experience from './experience'
 import {menu} from './store'
 
 import 'normalize-css'
@@ -18,16 +20,14 @@ const App = () => (
   </div>
 )
 
-const Home = () => (
-  <div>
-    <p>Home!</p>
-  </div>
-)
-
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home}/>
+		<Route exact path='/' render={() => (
+			<Container>
+				<Experience/>
+			</Container>
+		)}/>
       <Route path='/about'>
       	<p>О нас</p>
       </Route>
@@ -36,6 +36,12 @@ const Main = () => (
       </Route>
     </Switch>
   </main>
+)
+
+const Home = () => (
+  <div>
+    <p>Home!</p>
+  </div>
 )
 
 ReactDom.render(

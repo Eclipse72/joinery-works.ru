@@ -4,7 +4,8 @@ import { Switch, Route } from 'react-router-dom'
 import IconsList from '../iconslist'
 import Logo from '../logo'
 import Menu from '../menu'
-import Paralax from '../paralax'
+import Breadcrumbs from '../breadcrumbs'
+import HeaderBackground from '../headerbackground'
 import Slider from '../slider'
 
 import './style.css'
@@ -19,7 +20,11 @@ const Header = props => {
 			</div>
 			<Switch>
 				<Route exact path='/' component={Slider} />
-				<Route component={Paralax} />
+				<Route render={() => (
+					<HeaderBackground>
+						<Breadcrumbs/>
+					</HeaderBackground>
+				)}/>
 			</Switch>
 		</header>
 	)

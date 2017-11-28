@@ -1,0 +1,8 @@
+.experience{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+}
+.experience>h1, .experience>h5{
+	grid-column: 1/-1;
+}
