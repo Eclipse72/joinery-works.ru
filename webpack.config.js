@@ -4,14 +4,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = {
 	entry: path.join(__dirname, 'src', 'index.js'),
 	output: {
-		path: __dirname + '/public',
+		path: __dirname + '/docs',
 		filename: 'bundle.js'
 	},
 	module: {
 		rules: [
 		    {
-		    	test: /\.jsx?$/, 
-		    	exclude: /node_modules/, 
+		    	test: /\.jsx?$/,
+		    	exclude: /node_modules/,
 		    	loader: 'react-hot-loader!babel-loader'
 		    },
 		    {
@@ -20,7 +20,7 @@ const common = {
 			},
 			{
 				test: /\.(jpe?g|png|gif)$/,
-		    	exclude: /node_modules/, 
+		    	exclude: /node_modules/,
 				loader: 'file-loader?name=img/[name].[ext]'
 			},
 			{
@@ -31,7 +31,7 @@ const common = {
 		loaders: [
 			{
 				test: /\.json$/,
-				exclude: /node_modules/, 
+				exclude: /node_modules/,
 				loader: 'json-loader'
 			}
 		]
@@ -47,7 +47,7 @@ const common = {
 const developmentConfig = {
 	devServer: {
 		// inline: true,
-		contentBase: './public',
+		contentBase: './docs',
 		hot: true,
 		// stats:'errors-only',
 		// port: 9000
