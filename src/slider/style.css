@@ -1,6 +1,6 @@
 .slider{
 	height: 365px;
 	background-size: contain;
-	background: url(../img/slider-01-1920x665.jpg) no-repeat;
+	background: url(~/img/slider-01-1920x665.jpg) no-repeat;
 	background-position: center;
 }
